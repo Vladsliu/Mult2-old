@@ -16,6 +16,18 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Чук\source\repos\Mult2
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Чук/source/repos/Mult2/Views/Emergency/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1lcmdlbmN5XENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Чук/source/repos/Mult2/Views/Emergency/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1lcmdlbmN5XERldGFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Чук/source/repos/Mult2/Views/Emergency/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1lcmdlbmN5XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Чук/source/repos/Mult2/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
