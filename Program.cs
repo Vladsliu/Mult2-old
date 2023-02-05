@@ -1,10 +1,17 @@
 using Microsoft.EntityFrameworkCore;
 using Mult2.Data;
+using Mult2.Helpers;
+using Mult2.Interfaces;
+using Mult2.Repository;
+using Mult2.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddScoped<IPhotoService, PhotoService>();
+builder.Services.AddScoped<IContextRepository, ContextRepository>();
+builder.Services.Configure<CloudinarySettings>(builder.Configuration.GetSection("CloudinarySettings"));
 builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(
     builder.Configuration.GetConnectionString("DefaultConnection")));
 
