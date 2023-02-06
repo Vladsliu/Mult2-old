@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Mult2.Interfaces;
 using Mult2.Models;
 using System.Diagnostics;
 
@@ -7,10 +8,12 @@ namespace Mult2.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly IContextRepository _contextRepository;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, IContextRepository contextRepository)
         {
             _logger = logger;
+            _contextRepository = contextRepository;
         }
 
         public IActionResult Index()
@@ -18,7 +21,7 @@ namespace Mult2.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Contacts()
         {
             return View();
         }

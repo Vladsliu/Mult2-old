@@ -105,5 +105,22 @@ namespace Mult2.Controllers
                 return View(categoryVM);
             }
         }
+
+        public async Task<IActionResult> Delete(int id)
+        {
+            var categoryDetails = await _contextRepository.GetByIdAsync(id);
+            if (categoryDetails == null) return View("Error");
+            return View(categoryDetails);
+        }
+
+        [HttpPost, ActionName("Delete")]
+        public async Task<IActionResult> DeleteCategory(int id)
+        {
+            var categoryDetails = await _contextRepository.GetByIdAsync(id);
+            if (categoryDetails == null) return View("Error");
+
+            _contextRepository.Delete(categoryDetails);
+            return RedirectToAction("Index");
+        }
     }
 }
