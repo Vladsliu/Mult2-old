@@ -1,6 +1,9 @@
 ﻿@using Mult2.ViewModels;
 @model EditCategoryViewModel
 
+
+<h1>Profile editing</h1>
+
 <form method="post" asp-action="Edit" enctype="multipart/form-data">
     <input type="hidden" value="AddressId" id="AddressId" />
     <div class="form-group">
@@ -20,5 +23,6 @@
         <span asp-validation-for="Photo" class="text-danger"></span>
 
     </div>
+    <div></div>
     <button type="submit" class="btn btn-primary">Submit</button>
 </form>

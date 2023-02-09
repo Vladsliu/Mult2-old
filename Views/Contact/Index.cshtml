@@ -1,0 +1,29 @@
+﻿@using Mult2.ViewModels;
+@model Contact
+<section class="jumbotron text-center">
+    <div class="container">
+        <h1 class="jumbotron-heading">Feedback</h1>
+        <p class="lead text-muted">Feedback is important to us. Please write some message</p>
+        <p>
+        </p>
+    </div>
+</section>
+<form method="post" asp-action="Create" enctype="multipart/form-data">
+    <div class="form-group">
+        <label asp-for="Names">Name</label>
+        <input asp-for="Names" class="form-control" placeholder="Enter your Name">
+        <span asp-validation-for="Names" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Email">Email</label>
+        <input asp-for="Email" class="form-control" placeholder="Enter your Email">
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Message">Message</label>
+        <input asp-for="Message" class="form-control" placeholder="Enter your Message">
+        <span asp-validation-for="Message" class="text-danger"></span>
+    </div>
+    <br />
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

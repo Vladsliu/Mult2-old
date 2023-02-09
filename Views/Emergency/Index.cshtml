@@ -4,6 +4,23 @@
 <div class="album py-5 bg-light">
     <div class="container">
          <div class="row">
+
+
+            <section class="jumbotron text-center">
+                <div class="container">
+                    <h1 class="jumbotron-heading">Mult2</h1>
+                    <p class="lead text-muted">
+                        is a platform for presenting your pets.
+                        Each pet is an individual, tell us about it.
+                    </p>
+                    <p>
+                        <a asp-controller="Emergency" asp-action="Create" class="btn btn-primary my-2 " width="6" height="25">Create pets!</a>
+                    </p>
+                </div>
+            </section>
+
+
+
             @* @for (int i = 0; i < 3; i++)*@ @*5видео 14 хвилина теди*@
              @foreach(var item in Model)
             {
@@ -15,11 +32,15 @@
                             <p class="card-text">@item.Description</p>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <a type="btn btn-success" asp-controller="Emergency" asp-action="Detail" asp-route-id="@item.Id" class="btn btn-sm btn-outline-secondary">View</a>
+                              @*  <a type="btn btn-success" asp-controller="Emergency" asp-action="Detail" asp-route-id="@item.Id" class="btn btn-sm btn-outline-secondary">View</a>
                                     <a  asp-controller="Emergency" asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-outline-secondary">Edit</a>
+                                    <a asp-controller="Emergency" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-outline-secondary">Delete</a>*@
+
+                                    <a asp-controller="Emergency" asp-action="Detail" asp-route-id="@item.Id" class="btn btn-sm btn-outline-secondary">View</a>
+                                    <a asp-controller="Emergency" asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-outline-secondary">Edit</a>
                                     <a asp-controller="Emergency" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-outline-secondary">Delete</a>
                             </div>
-                            <small class="text-muted">@item.CreateDateTime</small>
+                            <small class="text-muted">@item.CreateDateTime.ToShortDateString()</small>
                         </div>
                     </div>
                 </div>
