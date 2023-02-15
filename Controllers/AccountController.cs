@@ -34,7 +34,7 @@ namespace Mult2.Controllers
         if (!ModelState.IsValid) return View(loginViewModel);
 
             var user = await _userManager.FindByEmailAsync(loginViewModel.EmailAddress);
-            //var user = await _userManager.FindByLoginAsync(loginViewModel.Login, loginViewModel.Login);
+            
            
 
             if (user != null) 
@@ -87,26 +87,10 @@ namespace Mult2.Controllers
             if (newUserResponse.Succeeded)
 
 
-            //    var RoleManager = serviceProvider.GetRequiredService<RoleManager<IdentityRole>>();
-            //var roleExist = await RoleManager.RoleExistsAsync("Admin");
-            //if (!roleExist)
-            //{
-            //    roleResult = await RoleManager.CreateAsync(new IdentityRole("Admin"));
-            //}
-            //await _userManager.AddToRoleAsync(user, "Admin");
+         
 
-
-            //var serviceScope = _userManager.ApplicationServices.CreateScope();
-            //var roleManager = serviceScope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
-            //if (!await roleManager.RoleExistsAsync(UserRoles.Admin))
-            //    await roleManager.CreateAsync(new IdentityRole(UserRoles.Admin));
-            //if (!await roleManager.RoleExistsAsync(UserRoles.User))
-            //    await roleManager.CreateAsync(new IdentityRole(UserRoles.User));
-
-
-
-            await _userManager.AddToRoleAsync(newUser, "user");//?admin?
-            //return View("Register");
+            await _userManager.AddToRoleAsync(newUser, UserRoles.Admin);
+            
             return RedirectToAction("Index", "Emergency");//old
         }
 
