@@ -32,15 +32,14 @@ namespace Mult2.Repository
 
         public async Task<Category> GetByIdAsync(int id)
         {
-            //return await _context.Categories.Include(i=>i.Id).FirstOrDefaultAsync(i => i.Id == id);
-            //return await _context.Clubs.Include(i => i.Address).FirstOrDefaultAsync(i => i.Id == id);
+           
             return await _context.Categories.FirstOrDefaultAsync(i => i.Id == id);
         }
 
         public async Task<Category> GetByIdAsyncNoTracking(int id)
         {
             return await _context.Categories.AsNoTracking().FirstOrDefaultAsync(i => i.Id == id);
-         // return await _context.Clubs.Include(i => i.Address).AsNoTracking().FirstOrDefaultAsync(i => i.Id == id);
+         
         }
 
         public bool Save()

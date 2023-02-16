@@ -39,22 +39,22 @@ namespace Mult2.Controllers
 
             if (user != null) 
               {
-                //find user, check password
+                
                 var passwordCheck = await _userManager.CheckPasswordAsync(user, loginViewModel.Password);
                 if (passwordCheck)
                 {
-                    //password correct, sign in
+                    
                     var result = await _signInManager.PasswordSignInAsync(user, loginViewModel.Password, false, false);
                     if (result.Succeeded) 
                     {
                         return RedirectToAction("Index", "Emergency");
                     }
                 }
-                //password is incorrect
+                
                 TempData["Error"] = "Wrong credentials. Try again";
                 return View(loginViewModel);
               }
-           //user not found
+           
             TempData["Error"] = "Wrong credentials. Try again";
             return View(loginViewModel);
         }
@@ -70,7 +70,7 @@ namespace Mult2.Controllers
         {
             if (!ModelState.IsValid) return View(registerViewModel);
 
-            var user = await _userManager.FindByEmailAsync(registerViewModel.EmailAddress);//error SqlException: Invalid object name 'AspNetUsers'.
+            var user = await _userManager.FindByEmailAsync(registerViewModel.EmailAddress);
             if (user != null)
             {
                 TempData["Error"] = "This email address is already in use";
@@ -82,16 +82,13 @@ namespace Mult2.Controllers
                 Email = registerViewModel.EmailAddress,
                 UserName = registerViewModel.EmailAddress
             };
-            var newUserResponse = await _userManager.CreateAsync(newUser, registerViewModel.Password);//?
+            var newUserResponse = await _userManager.CreateAsync(newUser, registerViewModel.Password);
 
             if (newUserResponse.Succeeded)
 
-
-         
-
             await _userManager.AddToRoleAsync(newUser, UserRoles.Admin);
             
-            return RedirectToAction("Index", "Emergency");//old
+            return RedirectToAction("Index", "Emergency");
         }
 
         [HttpPost]

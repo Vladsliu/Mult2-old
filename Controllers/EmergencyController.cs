@@ -8,7 +8,7 @@ namespace Mult2.Controllers
 {
     public class EmergencyController : Controller
     {
-        //private readonly ApplicationDbContext _context;
+      
         private readonly IContextRepository _contextRepository;
         private readonly IPhotoService _photoService;
 
@@ -43,7 +43,7 @@ namespace Mult2.Controllers
                     Description = categoryVM.Description,
                     Photo = result.Url.ToString()
                 };
-                _contextRepository.Add(category);//??
+                _contextRepository.Add(category);
                 return RedirectToAction("Index");
             }
             else

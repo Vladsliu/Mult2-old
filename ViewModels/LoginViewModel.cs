@@ -6,7 +6,6 @@ namespace Mult2.ViewModels
     {
         [Display(Name = "Email Address")]
         [Required(ErrorMessage = "Email address is required")]
-        //public string Login { get; set; }
         public string EmailAddress { get; set; }
         [Required]
         [DataType(DataType.Password)]
