@@ -31,6 +31,7 @@ namespace Mult2.Controllers
             }
             _context.Add(contact);
             _context.SaveChanges();
+
             return RedirectToAction("Create");
         }
     }

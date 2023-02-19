@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\Mult2.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\Чук\\source\\repos\\Mult2\\wwwroot\\css\\bootswatchTheme.css",
+      "PackagePath": "staticwebassets\\css\\bootswatchTheme.css"
+    },
+    {
       "Id": "C:\\Users\\Чук\\source\\repos\\Mult2\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

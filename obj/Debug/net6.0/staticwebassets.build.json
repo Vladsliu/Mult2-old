@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "z6nk004vq9L4V31w18PkFbjCwRezPu13VIpq4MuqNKs=",
+  "Hash": "Bz80X/A/X0H9q51/HsCQUfYW/BFASIzOnGYLG+0Mzkw=",
   "Source": "Mult2",
   "BasePath": "_content/Mult2",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Чук\\source\\repos\\Mult2\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Mult2.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\Чук\\source\\repos\\Mult2\\wwwroot\\css\\bootswatchTheme.css",
+      "SourceId": "Mult2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Чук\\source\\repos\\Mult2\\wwwroot\\",
+      "BasePath": "_content/Mult2",
+      "RelativePath": "css/bootswatchTheme.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\bootswatchTheme.css"
     },
     {
       "Identity": "C:\\Users\\Чук\\source\\repos\\Mult2\\wwwroot\\css\\site.css",
