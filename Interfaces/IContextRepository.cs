@@ -3,7 +3,7 @@ using Mult2.Models;
 
 namespace Mult2.Interfaces
 {
-    public interface IContextRepository//????
+    public interface IContextRepository
     {
         Task<IEnumerable<Category>> GetAll();
         Task<Category> GetByIdAsync(int id);

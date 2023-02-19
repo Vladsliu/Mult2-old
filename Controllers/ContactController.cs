@@ -27,11 +27,11 @@ namespace Mult2.Controllers
         {
             if (!ModelState.IsValid)
             {
-            return View("Index");//??
+            return View("Index");
             }
             _context.Add(contact);
             _context.SaveChanges();
-            return RedirectToAction("Create");//?
+            return RedirectToAction("Create");
         }
     }
 
