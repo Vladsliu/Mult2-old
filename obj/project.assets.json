@@ -3855,11 +3855,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Чук\\source\\repos\\Mult2\\Mult2.csproj",
+      "projectUniqueName": "C:\\Users\\Чук\\Documents\\GitHub\\Mult2-old\\Mult2.csproj",
       "projectName": "Mult2",
-      "projectPath": "C:\\Users\\Чук\\source\\repos\\Mult2\\Mult2.csproj",
+      "projectPath": "C:\\Users\\Чук\\Documents\\GitHub\\Mult2-old\\Mult2.csproj",
       "packagesPath": "C:\\Users\\Чук\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Чук\\source\\repos\\Mult2\\obj\\",
+      "outputPath": "C:\\Users\\Чук\\Documents\\GitHub\\Mult2-old\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

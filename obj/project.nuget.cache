@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "AlbkwZmDVDyTeDY18+XKLwT/v9XuB2GzXiUMRZOa+dvyIw/fJUkCygnfThErsDfAbKJYvhhOqFdfpJ8LnTU6Dw==",
+  "dgSpecHash": "C4Bm/qYj0Iq+fn66CXUg3sESnOjYKdEpppgO4N3fc32A+yYsbo56HunAuN1luWCMCAPLUzjWImT7vCdVI4cTyw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Чук\\source\\repos\\Mult2\\Mult2.csproj",
+  "projectFilePath": "C:\\Users\\Чук\\Documents\\GitHub\\Mult2-old\\Mult2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Чук\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Чук\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
