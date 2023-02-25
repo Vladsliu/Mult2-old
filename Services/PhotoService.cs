@@ -1,8 +1,8 @@
 ﻿using CloudinaryDotNet;
 using CloudinaryDotNet.Actions;
 using Microsoft.Extensions.Options;
-using Mult2.Helpers;
 using Mult2.Interfaces;
+using Mult2.Services.CloudinaryHelpers;
 
 namespace Mult2.Services
 {

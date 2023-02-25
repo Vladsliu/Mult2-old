@@ -3,11 +3,11 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Mult2.Data;
-using Mult2.Helpers;
 using Mult2.Interfaces;
 using Mult2.Models;
 using Mult2.Repository;
 using Mult2.Services;
+using Mult2.Services.CloudinaryHelpers;
 
 var builder = WebApplication.CreateBuilder(args);
 

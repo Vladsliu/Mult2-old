@@ -17,13 +17,13 @@ namespace Mult2.Controllers
             return View();
         }
 
-        public IActionResult Create()
+        public IActionResult SuccessfullMessage()
         {
             return View();
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create(Contact contact)
+        public async Task<IActionResult> SuccessfullMessage(Contact contact)
         {
             if (!ModelState.IsValid)
             {
@@ -32,7 +32,7 @@ namespace Mult2.Controllers
             _context.Add(contact);
             _context.SaveChanges();
 
-            return RedirectToAction("Create");
+            return RedirectToAction("SuccessfullMessage");
         }
     }
 

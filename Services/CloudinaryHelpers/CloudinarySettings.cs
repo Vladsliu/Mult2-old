@@ -1,4 +1,4 @@
-﻿namespace Mult2.Helpers
+﻿namespace Mult2.Services.CloudinaryHelpers
 {
     public class CloudinarySettings
     {
